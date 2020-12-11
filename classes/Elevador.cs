@@ -35,30 +35,30 @@ namespace challenge_1
             Console.WriteLine("[2]");
             Console.WriteLine("[1]");
             Console.WriteLine("[0]");
-            Console.ForegroundColor=ConsoleColor.Red;
+            Console.ForegroundColor=ConsoleColor.Green;
             int andar2 = int.Parse(Console.ReadLine());
            switch (andar2)
            {
                case 0:
-               Console.WriteLine("opa! voce ja esta no terreo");
+               Console.WriteLine("Você está no " + andar2);
                    break;
                 case 1:
-               Console.WriteLine("opa! voce ja esta no primeiro andar");
+               Console.WriteLine("Você está no " + andar2);
                    break;
                  case 2:
-               Console.WriteLine("opa! voce ja esta no segundo andar");
+               Console.WriteLine("Você está no " + andar2);
                    break;
                 case 3:
-               Console.WriteLine("opa! voce ja esta no terceiro andar");
+               Console.WriteLine("Você está no " + andar2);
                    break;
                 case 4:
-               Console.WriteLine("opa! voce ja esta no quarto andar");
+               Console.WriteLine("Você está no " + andar2);
                    break;
                 case 5:
-               Console.WriteLine("opa! voce ja esta no quinto andar");
+               Console.WriteLine(" voce está no 3" + andar2);
                    break;
                    
-               default:  Console.ForegroundColor=ConsoleColor.Cyan;
+               default:  Console.ForegroundColor=ConsoleColor.Red;
                          Console.WriteLine("Este predio só tem 5 andares :) ");
                          Console.WriteLine("Escolha outro andar");
                    break;
@@ -82,9 +82,10 @@ namespace challenge_1
             Console.ForegroundColor=ConsoleColor.Green;
             switch (andar)
             {
-            
+                
                 case 0:
                 Console.WriteLine("Terreo");
+                  VerificarAndar();
                     break;
 
                      case 1:
@@ -95,23 +96,27 @@ namespace challenge_1
                      case 2:
                 Console.WriteLine("Segundo Andar");
                   VerificarAndar();
+                 
                     break;
 
                      case 3:
                 Console.WriteLine("Terceiro Andar");
                   VerificarAndar();
+                 
                     break;
 
                      case 4:
                 Console.WriteLine("Quarto Andar");
                   VerificarAndar();
+                 
                     break;
 
                      case 5:
                 Console.WriteLine("Quinto Andar");
                   VerificarAndar();
+                 
                     break;
-                 Console.ForegroundColor=ConsoleColor.Cyan;
+                 Console.ForegroundColor=ConsoleColor.Red;
                 default: Console.WriteLine("Este predio só tem 5 andares :) ");
                          Console.WriteLine("Escolha outro andar");
 
